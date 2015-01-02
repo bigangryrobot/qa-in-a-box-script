@@ -68,12 +68,12 @@ fi
 #getpagestatistics --- still working on this one
 GET_PAGE_STATISTICS() {
 #find unrecognised words
-UNRECOGNISED_WORDS=`lynx -dump peoplefinders.com | aspell list | sort -u`
-if [ "$UNRECOGNISED_WORDS=" != "" ] ; then
-                UNRECOGNISED_WORDS_FOUND="X"
-else
-                UNRECOGNISED_WORDS_FOUND=""
-fi
+#UNRECOGNISED_WORDS=`lynx -dump | aspell list | sort -u`
+#if [ "$UNRECOGNISED_WORDS=" != "" ] ; then
+#                UNRECOGNISED_WORDS_FOUND="X"
+#else
+#                UNRECOGNISED_WORDS_FOUND=""
+#fi
 #compare to qa if present
 # need to add sed of current url and test to find comperable qa site
 GET_URL_STATUS $URL
